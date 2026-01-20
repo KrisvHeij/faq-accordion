@@ -1,0 +1,21 @@
+/* Custom properties */
+@layer colors {
+  :root {
+    --c-white: hsl(0 100% 100%);
+    --c-black: hsl(0 0% 0%);
+    --c-purple-950: hsl(292 42% 14%);
+    --c-purple-600: hsl(292 16% 49%);
+    --c-purple-100: hsl(275 100% 97%);
+    --c-violet: hsl(281 83% 54%);
+  }
+}
+
+@layer spacing {
+  :root {
+    --spacing-100: 0.5rem;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+  }
+}
