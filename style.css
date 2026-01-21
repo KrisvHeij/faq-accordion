@@ -19,3 +19,30 @@
     --spacing-500: 2.5rem;
   }
 }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--c-purple-100);
+  background-image: url(./assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: var(--spacing-300);
+}
+
+main {
+  background-color: var(--c-white);
+  border-radius: clamp(0.5rem, calc(0.023rem + 2.036vw), 1rem);
+  padding: clamp(1.5rem, calc(0.546rem + 4.071vw), 2.5rem);
+}
