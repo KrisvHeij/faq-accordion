@@ -6,6 +6,7 @@ faqItems.forEach(item => {
   item.addEventListener("toggle", () => {
     if (item.open) {
       icon.src = "./assets/images/icon-minus.svg";
+      item.querySelector("summary").setAttribute("aria-expanded", "true");
     } else {
       icon.src = "./assets/images/icon-plus.svg";
     }
@@ -15,6 +16,7 @@ faqItems.forEach(item => {
       faqItems.forEach((other) => {
         if (other !== item) {
           other.open = false;
+          other.querySelector("summary").setAttribute("aria-expanded", "false");
         }
       })
     }
